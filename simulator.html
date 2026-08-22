@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreditSmart - Simulador de Créditos</title>
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header>
+        <nav>
+            <div class="brand">
+                <h2>CreditSmart</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="simulator.html" class="active">Simulador</a></li>
+                <li><a href="request.html">Solicitar Crédito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Filtros de Búsqueda -->
+        <section class="search-filters">
+            <h1>Simulador y Búsqueda de Créditos</h1>
+            <p>Encuentra el crédito que mejor se adapte a tus necesidades financieras.</p>
+            
+            <form action="#" method="GET" class="filter-form">
+                <div class="filter-group">
+                    <label for="search-name">Buscar por nombre:</label>
+                    <input type="text" id="search-name" name="search-name" placeholder="Ej. Vehículo, Vivienda...">
+                </div>
+
+                <div class="filter-group">
+                    <label for="amount-range">Rango de Monto:</label>
+                    <select id="amount-range" name="amount-range">
+                        <option value="">Todos los montos</option>
+                        <option value="1">Hasta $5.000.000</option>
+                        <option value="2">$5.000.001 - $20.000.000</option>
+                        <option value="3">$20.000.001 - $50.000.000</option>
+                        <option value="4">Más de $50.000.000</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn-search">Buscar</button>
+            </form>
+        </section>
+
+        <!-- Resultados de Búsqueda -->
+        <section class="results">
+            <h2>Resultados Disponibles</h2>
+            <div class="cards-container">
+                
+                <article class="credit-card">
+                    <img src="https://placehold.co/100x100?text=Libre+Inversion" alt="Icono Libre Inversión">
+                    <h3>Crédito Libre Inversión</h3>
+                    <p><strong>Tasa de interés:</strong> 14.5% EA</p>
+                    <p><strong>Monto disponible:</strong> $1.000.000 - $50.000.000</p>
+                    <p><strong>Plazo máximo:</strong> 60 meses</p>
+                    <a href="solicitar.html" class="btn">Solicitar Crédito</a>
+                </article>
+
+                <article class="credit-card">
+                    <img src="https://placehold.co/100x100?text=Vehiculo" alt="Icono Vehículo">
+                    <h3>Crédito Vehículo</h3>
+                    <p><strong>Tasa de interés:</strong> 11.2% EA</p>
+                    <p><strong>Monto disponible:</strong> $5.000.000 - $120.000.000</p>
+                    <p><strong>Plazo máximo:</strong> 72 meses</p>
+                    <a href="solicitar.html" class="btn">Solicitar Crédito</a>
+                </article>
+
+                <article class="credit-card">
+                    <img src="https://placehold.co/100x100?text=Educativo" alt="Icono Educativo">
+                    <h3>Crédito Educativo</h3>
+                    <p><strong>Tasa de interés:</strong> 7.5% EA</p>
+                    <p><strong>Monto disponible:</strong> $500.000 - $20.000.000</p>
+                    <p><strong>Plazo máximo:</strong> 36 meses</p>
+                    <a href="solicitar.html" class="btn">Solicitar Crédito</a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CreditSmart - FinTech Solutions S.A.S. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
