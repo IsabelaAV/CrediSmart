@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreditSmart - Catálogo de Créditos</title>
+    <title>CreditSmart - Tu Aliado Financiero</title>
 </head>
 <body>
 
-    <!-- Encabezado y Navegación Principal -->
+    <!-- Encabezado y Navegación -->
     <header>
         <nav>
             <div class="brand">
@@ -15,97 +15,69 @@
             </div>
             <ul>
                 <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
                 <li><a href="simulator.html">Simulador</a></li>
                 <li><a href="request.html">Solicitar Crédito</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contenido Principal -->
     <main>
-        <!-- Sección Banner/Hero -->
+        <!-- Sección Banner Principal / Hero -->
         <section class="hero">
-            <h1>Impulsa tus proyectos con CreditSmart</h1>
-            <p>Conoce nuestras líneas de crédito con las mejores tasas del mercado y solicita la tuya en minutos.</p>
+            <h1>Tu futuro financiero comienza con decisiones inteligentes</h1>
+            <p>En CreditSmart te ofrecemos soluciones crediticias adaptadas a tus metas. Transparencia, rapidez y 100% digital.</p>
+            <div class="hero-buttons">
+                <a href="catalog.html" class="btn btn-primary">Ver Catálogo de Créditos</a>
+                <a href="simulator.html" class="btn btn-secondary">Simular mi Crédito</a>
+            </div>
         </section>
 
-        <!-- Sección Catálogo de Productos -->
-        <section class="catalog">
-            <h2>Nuestros Productos Crediticios</h2>
-            
-            <div class="cards-container">
-                
-                <!-- Tarjeta 1: Libre Inversión -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Libre+Inversion" alt="Icono Crédito Libre Inversión">
-                    <h3>Crédito Libre Inversión</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 14.5% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $1.000.000 - $50.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 60 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Edad mínima 18 años, cédula y certificación laboral.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
+        <!-- Sección de Características y Beneficios -->
+        <section class="features">
+            <h2>¿Por qué elegir CreditSmart?</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <h3>100% Digital</h3>
+                    <p>Solicita tu crédito desde la comodidad de tu hogar, sin filas ni papeleos innecesarios.</p>
                 </article>
 
-                <!-- Tarjeta 2: Crédito Vehículo -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Vehiculo" alt="Icono Crédito Vehículo">
-                    <h3>Crédito Vehículo</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 11.2% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $5.000.000 - $120.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 72 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Cotización del vehículo, ingresos desde 2 SMLV.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
+                <article class="feature-card">
+                    <h3>Tasas Transparentes</h3>
+                    <p>Sin costos ocultos. Tasas competitivas y claras desde el primer momento.</p>
                 </article>
 
-                <!-- Tarjeta 3: Crédito Vivienda -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Vivienda" alt="Icono Crédito Vivienda">
-                    <h3>Crédito Vivienda</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 8.9% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $30.000.000 - $300.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 240 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Avalúo comercial, promesas de compraventa.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
+                <article class="feature-card">
+                    <h3>Aprobación Rápida</h3>
+                    <p>Evaluamos tu solicitud de manera ágil para darte respuesta en tiempo récord.</p>
                 </article>
 
-                <!-- Tarjeta 4: Crédito Educativo -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Educativo" alt="Icono Crédito Educativo">
-                    <h3>Crédito Educativo</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 7.5% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $500.000 - $20.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 36 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Orden de matrícula vigente, codeudor solidario.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
+                <article class="feature-card">
+                    <h3>Seguridad Garantizada</h3>
+                    <p>Tus datos están protegidos bajo los más altos estándares de seguridad cibernética.</p>
                 </article>
-
-                <!-- Tarjeta 5: Crédito Empresarial -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Empresarial" alt="Icono Crédito Empresarial">
-                    <h3>Crédito Empresarial</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 12.0% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $10.000.000 - $200.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 84 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Cámara de Comercio (mínimo 1 año), estados financieros.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
-                </article>
-
-                <!-- Tarjeta 6: Microcrédito -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Microcredito" alt="Icono Microcrédito">
-                    <h3>Microcrédito Emprendedor</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 15.0% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $1.000.000 - $15.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 24 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Negocio en funcionamiento por más de 6 meses.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
-                </article>
-
             </div>
+        </section>
+
+        <!-- Sección ¿Cómo funciona? -->
+        <section class="how-it-works">
+            <h2>¿Cómo solicitar tu crédito?</h2>
+            <ol class="steps-list">
+                <li><strong>Explora el catálogo:</strong> Conoce nuestras diferentes líneas de crédito disponibles.</li>
+                <li><strong>Simula tu crédito:</strong> Ajusta montos y plazos en nuestro simulador interactivo.</li>
+                <li><strong>Diligencia el formulario:</strong> Completa tu información personal y laboral en minutos.</li>
+                <li><strong>Recibe tu desembolso:</strong> Una vez aprobado, el dinero se deposita directamente en tu cuenta.</li>
+            </ol>
+        </section>
+
+        <!-- Llamado a la Acción (CTA) Final -->
+        <section class="cta-banner">
+            <h2>¿Listo para dar el siguiente paso?</h2>
+            <p>Conoce la línea de crédito perfecta para ti hoy mismo.</p>
+            <a href="request.html" class="btn btn-cta">Solicitar Crédito Ahora</a>
         </section>
     </main>
 
-    <!-- Pie de Página -->
     <footer>
         <p>&copy; 2026 CreditSmart - FinTech Solutions S.A.S. Todos los derechos reservados.</p>
     </footer>
