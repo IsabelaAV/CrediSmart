@@ -1,4 +1,4 @@
-/* Estilos adicionales para complementar Bootstrap */
+/* Estilos para el Footer y el Simulador */
 body {
     display: flex;
     flex-direction: column;
@@ -7,6 +7,15 @@ body {
 
 main {
     flex: 1;
+}
+
+/* Tarjeta oscura del simulador */
+.bg-navy {
+    background-color: #0d1b2a;
+}
+
+.bg-navy-light {
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 .nav-link.active {
