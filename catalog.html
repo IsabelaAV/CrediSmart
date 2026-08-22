@@ -4,112 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CreditSmart - Catálogo de Créditos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="bg-light">
 
-    <!-- Encabezado y Navegación Principal -->
-    <header>
-        <nav>
-            <div class="brand">
-                <h2>CreditSmart</h2>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="index.html">Credit<span class="text-white">Smart</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="catalog.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="simulator.html">Simulador</a></li>
+                        <li class="nav-item"><a class="nav-link" href="request.html">Solicitar Crédito</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalog.html"  class="active">Catálogo</a></li>
-                <li><a href="simulator.html">Simulador</a></li>
-                <li><a href="request.html">Solicitar Crédito</a></li>
-            </ul>
         </nav>
     </header>
 
-    <!-- Contenido Principal -->
-    <main>
-        <!-- Sección Banner/Hero -->
-        <section class="hero">
-            <h1>Impulsa tus proyectos con CreditSmart</h1>
-            <p>Conoce nuestras líneas de crédito con las mejores tasas del mercado y solicita la tuya en minutos.</p>
-        </section>
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Impulsa tus proyectos con CreditSmart</h1>
+            <p class="text-muted">Conoce nuestras líneas de crédito con las mejores tasas del mercado.</p>
+        </div>
 
-        <!-- Sección Catálogo de Productos -->
         <section class="catalog">
-            <h2>Nuestros Productos Crediticios</h2>
+            <h2 class="h4 fw-bold mb-4 pb-2 border-bottom">Nuestros Productos Crediticios</h2>
             
-            <div class="cards-container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 
-                <!-- Tarjeta 1: Libre Inversión -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Libre+Inversion" alt="Icono Crédito Libre Inversión">
-                    <h3>Crédito Libre Inversión</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 14.5% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $1.000.000 - $50.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 60 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Edad mínima 18 años, cédula y certificación laboral.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
-                </article>
+                <!-- Tarjeta 1 -->
+                <div class="col">
+                    <article class="card h-100 shadow-sm border-0 p-3">
+                        <img src="https://placehold.co/100x100?text=Libre+Inversion" class="rounded-circle mx-auto my-2" alt="Icono Libre Inversión" width="80" height="80">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title text-center fw-bold mb-3">Crédito Libre Inversión</h3>
+                            <p class="mb-1 text-primary fw-bold"><strong>Tasa:</strong> 14.5% EA</p>
+                            <p class="mb-1"><strong>Monto:</strong> $1.000.000 - $50.000.000</p>
+                            <p class="mb-3"><strong>Plazo máximo:</strong> 60 meses</p>
+                            <div class="p-2 bg-light rounded text-muted small mb-3"><strong>Requisitos:</strong> Edad mínima 18 años, cédula y certificación laboral.</div>
+                            <a href="request.html" class="btn btn-primary mt-auto w-100">Solicitar Crédito</a>
+                        </div>
+                    </article>
+                </div>
 
-                <!-- Tarjeta 2: Crédito Vehículo -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Vehiculo" alt="Icono Crédito Vehículo">
-                    <h3>Crédito Vehículo</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 11.2% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $5.000.000 - $120.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 72 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Cotización del vehículo, ingresos desde 2 SMLV.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
-                </article>
+                <!-- Tarjeta 2 -->
+                <div class="col">
+                    <article class="card h-100 shadow-sm border-0 p-3">
+                        <img src="https://placehold.co/100x100?text=Vehiculo" class="rounded-circle mx-auto my-2" alt="Icono Vehículo" width="80" height="80">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title text-center fw-bold mb-3">Crédito Vehículo</h3>
+                            <p class="mb-1 text-primary fw-bold"><strong>Tasa:</strong> 11.2% EA</p>
+                            <p class="mb-1"><strong>Monto:</strong> $5.000.000 - $120.000.000</p>
+                            <p class="mb-3"><strong>Plazo máximo:</strong> 72 meses</p>
+                            <div class="p-2 bg-light rounded text-muted small mb-3"><strong>Requisitos:</strong> Cotización del vehículo, ingresos desde 2 SMLV.</div>
+                            <a href="request.html" class="btn btn-primary mt-auto w-100">Solicitar Crédito</a>
+                        </div>
+                    </article>
+                </div>
 
-                <!-- Tarjeta 3: Crédito Vivienda -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Vivienda" alt="Icono Crédito Vivienda">
-                    <h3>Crédito Vivienda</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 8.9% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $30.000.000 - $300.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 240 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Avalúo comercial, promesas de compraventa.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
-                </article>
+                <!-- Tarjeta 3 -->
+                <div class="col">
+                    <article class="card h-100 shadow-sm border-0 p-3">
+                        <img src="https://placehold.co/100x100?text=Vivienda" class="rounded-circle mx-auto my-2" alt="Icono Vivienda" width="80" height="80">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title text-center fw-bold mb-3">Crédito Vivienda</h3>
+                            <p class="mb-1 text-primary fw-bold"><strong>Tasa:</strong> 8.9% EA</p>
+                            <p class="mb-1"><strong>Monto:</strong> $30.000.000 - $300.000.000</p>
+                            <p class="mb-3"><strong>Plazo máximo:</strong> 240 meses</p>
+                            <div class="p-2 bg-light rounded text-muted small mb-3"><strong>Requisitos:</strong> Avalúo comercial, promesas de compraventa.</div>
+                            <a href="request.html" class="btn btn-primary mt-auto w-100">Solicitar Crédito</a>
+                        </div>
+                    </article>
+                </div>
 
-                <!-- Tarjeta 4: Crédito Educativo -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Educativo" alt="Icono Crédito Educativo">
-                    <h3>Crédito Educativo</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 7.5% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $500.000 - $20.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 36 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Orden de matrícula vigente, codeudor solidario.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
-                </article>
+                <!-- Tarjeta 4 -->
+                <div class="col">
+                    <article class="card h-100 shadow-sm border-0 p-3">
+                        <img src="https://placehold.co/100x100?text=Educativo" class="rounded-circle mx-auto my-2" alt="Icono Educativo" width="80" height="80">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title text-center fw-bold mb-3">Crédito Educativo</h3>
+                            <p class="mb-1 text-primary fw-bold"><strong>Tasa:</strong> 7.5% EA</p>
+                            <p class="mb-1"><strong>Monto:</strong> $500.000 - $20.000.000</p>
+                            <p class="mb-3"><strong>Plazo máximo:</strong> 36 meses</p>
+                            <div class="p-2 bg-light rounded text-muted small mb-3"><strong>Requisitos:</strong> Orden de matrícula vigente, codeudor.</div>
+                            <a href="request.html" class="btn btn-primary mt-auto w-100">Solicitar Crédito</a>
+                        </div>
+                    </article>
+                </div>
 
-                <!-- Tarjeta 5: Crédito Empresarial -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Empresarial" alt="Icono Crédito Empresarial">
-                    <h3>Crédito Empresarial</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 12.0% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $10.000.000 - $200.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 84 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Cámara de Comercio (mínimo 1 año), estados financieros.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
-                </article>
+                <!-- Tarjeta 5 -->
+                <div class="col">
+                    <article class="card h-100 shadow-sm border-0 p-3">
+                        <img src="https://placehold.co/100x100?text=Empresarial" class="rounded-circle mx-auto my-2" alt="Icono Empresarial" width="80" height="80">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title text-center fw-bold mb-3">Crédito Empresarial</h3>
+                            <p class="mb-1 text-primary fw-bold"><strong>Tasa:</strong> 12.0% EA</p>
+                            <p class="mb-1"><strong>Monto:</strong> $10.000.000 - $200.000.000</p>
+                            <p class="mb-3"><strong>Plazo máximo:</strong> 84 meses</p>
+                            <div class="p-2 bg-light rounded text-muted small mb-3"><strong>Requisitos:</strong> Cámara de Comercio (1 año) y estados financieros.</div>
+                            <a href="request.html" class="btn btn-primary mt-auto w-100">Solicitar Crédito</a>
+                        </div>
+                    </article>
+                </div>
 
-                <!-- Tarjeta 6: Microcrédito -->
-                <article class="credit-card">
-                    <img src="https://placehold.co/100x100?text=Microcredito" alt="Icono Microcrédito">
-                    <h3>Microcrédito Emprendedor</h3>
-                    <p class="interest-rate"><strong>Tasa de interés:</strong> 15.0% EA</p>
-                    <p class="amount"><strong>Monto disponible:</strong> $1.000.000 - $15.000.000</p>
-                    <p class="term"><strong>Plazo máximo:</strong> 24 meses</p>
-                    <p class="requirements"><strong>Requisitos:</strong> Negocio en funcionamiento por más de 6 meses.</p>
-                    <a href="request.html" class="btn">Solicitar Crédito</a>
-                </article>
+                <!-- Tarjeta 6 -->
+                <div class="col">
+                    <article class="card h-100 shadow-sm border-0 p-3">
+                        <img src="https://placehold.co/100x100?text=Microcredito" class="rounded-circle mx-auto my-2" alt="Icono Microcrédito" width="80" height="80">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title text-center fw-bold mb-3">Microcrédito Emprendedor</h3>
+                            <p class="mb-1 text-primary fw-bold"><strong>Tasa:</strong> 15.0% EA</p>
+                            <p class="mb-1"><strong>Monto:</strong> $1.000.000 - $15.000.000</p>
+                            <p class="mb-3"><strong>Plazo máximo:</strong> 24 meses</p>
+                            <div class="p-2 bg-light rounded text-muted small mb-3"><strong>Requisitos:</strong> Negocio en funcionamiento por más de 6 meses.</div>
+                            <a href="request.html" class="btn btn-primary mt-auto w-100">Solicitar Crédito</a>
+                        </div>
+                    </article>
+                </div>
 
             </div>
         </section>
     </main>
 
-    <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2026 CreditSmart - FinTech Solutions S.A.S. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-secondary py-4 text-center mt-auto border-top border-secondary">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 CreditSmart - FinTech Solutions S.A.S. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
